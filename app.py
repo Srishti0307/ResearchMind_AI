@@ -30,11 +30,21 @@ st.markdown("""
 <style>
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+            
+/* FORCE DARK THEME */
+.stApp {
+    background-color: #0E1117 !important;
+    color: #FAFAFA !important;
+}
+
+.stApp > header {
+    background-color: transparent !important;
+}            
 
 /* Global Styles - LIGHT THEME */
 .main {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #e9ecef 100%);
+    background: linear-gradient(135deg, #0E1117 0%, #1a1a2e 50%, #16213e 100%);
     min-height: 100vh;
 }
 
@@ -342,6 +352,63 @@ div[data-testid="stMarkdownContainer"] h6,
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+            
+/* PURPLE SIDEBAR - Multiple Selectors for Different Streamlit Versions */
+.css-1d391kg, 
+.css-1lcbmhc, 
+.css-17eq0hr,
+.css-1544g2n,
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #A78BFA 0%, #C4B5FD 50%, #B794F6 100%) !important;
+    border-right: 2px solid #B794F6 !important;
+    box-shadow: 2px 0 10px rgba(183, 148, 246, 0.1) !important;
+}
+
+/* Force sidebar background with data attribute */
+section[data-testid="stSidebar"] > div {
+    background: linear-gradient(180deg, #554a5e 0%, #6a5f73 50%, #4a3f52 100%) !important;        
+    # background: linear-gradient(180deg, #E8E2FF 0%, #F3F0FF 50%, #EDE7FF 100%) !important;
+}
+
+/* Sidebar content styling */
+.css-1d391kg *, 
+.css-1lcbmhc *, 
+.css-17eq0hr *,
+.css-1544g2n *,
+section[data-testid="stSidebar"] * {
+    color: #1e0136 !important;
+}
+
+/* Sidebar buttons */
+.css-1d391kg .stButton > button,
+.css-1lcbmhc .stButton > button,
+.css-17eq0hr .stButton > button,
+.css-1544g2n .stButton > button,
+section[data-testid="stSidebar"] .stButton > button {
+    background: linear-gradient(45deg, #B794F6, #9F7AEA) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 15px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 3px 10px rgba(183, 148, 246, 0.3) !important;
+}
+
+/* Button hover effects */
+.css-1d391kg .stButton > button:hover,
+.css-1lcbmhc .stButton > button:hover,
+.css-17eq0hr .stButton > button:hover,
+.css-1544g2n .stButton > button:hover,
+section[data-testid="stSidebar"] .stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(183, 148, 246, 0.4) !important;
+    background: linear-gradient(45deg, #9F7AEA, #805AD5) !important;
+}            
+
+
+
+
+
 
 /* Sidebar enhanced styling */
 .sidebar .sidebar-content {
