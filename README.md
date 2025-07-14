@@ -4,9 +4,11 @@
 
 **ResearchMind AI** is an intelligent research document analysis tool that transforms complex academic papers into actionable insights. Using advanced AI powered by the Groq API, it provides instant summaries, interactive Q&A, and knowledge assessments for any research document.
 
-### 🌐 Live Demo
+### 🌐 Live Demo & Video
 
 **🚀 Try it now:** [https://researchmind-ai-ez.streamlit.app/](https://researchmind-ai-ez.streamlit.app/)
+
+**📺 Watch the demo:** [YouTube Video Tutorial](https://youtu.be/n5WZDDANiXo)
 
 *Experience the full functionality without any setup - just upload your research document and start exploring!*
 
@@ -219,6 +221,17 @@ ResearchMind_AI/
 ---
 
 ## 🎯 Usage Examples
+
+### 📺 Video Demonstration
+
+**🎬 Complete Walkthrough:** [Watch on YouTube](https://youtu.be/n5WZDDANiXo)
+
+See ResearchMind AI in action! This video demonstrates:
+- Document upload and processing
+- AI summarization in real-time
+- Interactive Q&A features
+- Quiz generation and evaluation
+- PDF export functionality
 
 ### Basic Workflow
 1. **Upload**: Drop a research paper (PDF/TXT)
